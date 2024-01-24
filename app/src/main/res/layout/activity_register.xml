@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/registration_background"
+    tools:context=".RegisterActivity">
+
+    <TextView
+        android:id="@+id/welcmeZomato"
+        android:layout_width="282dp"
+        android:layout_height="66dp"
+        android:layout_marginTop="116dp"
+        android:contentDescription="TODO"
+        android:text="Zomato"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="50dp"
+        android:textStyle="italic"
+        android:typeface="serif"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="143dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="24dp"
+        android:text="Register"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="25dp"
+        android:typeface="serif"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/welcmeZomato" />
+
+    <EditText
+        android:id="@+id/nameRegisterEditTextText"
+        android:layout_width="329dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="4dp"
+        android:drawableLeft="@drawable/user_icon"
+        android:drawablePadding="10dp"
+        android:hint="NAME"
+        android:inputType="text"
+        android:padding="10dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <EditText
+        android:id="@+id/emailRegisterEditTextEmailAddress"
+        android:layout_width="329dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="24dp"
+        android:drawableLeft="@drawable/email_icon"
+        android:drawablePadding="10dp"
+        android:hint="EMAIL"
+        android:inputType="textEmailAddress"
+        android:padding="10dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nameRegisterEditTextText" />
+
+    <EditText
+        android:id="@+id/passwordRegisterEditTextPassword"
+        android:layout_width="329dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:hint="PASSWORD"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        android:drawableLeft="@drawable/password_icon"
+        android:drawablePadding="10dp"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/emailRegisterEditTextEmailAddress" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button"
+        android:layout_width="214dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/welcome_register_button"
+        android:clickable="true"
+        android:contentDescription="Register button"
+        android:text="Register"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:typeface="serif"
+        app:layout_constraintEnd_toEndOf="@+id/passwordRegisterEditTextPassword"
+        app:layout_constraintStart_toStartOf="@+id/passwordRegisterEditTextPassword"
+        app:layout_constraintTop_toBottomOf="@+id/passwordRegisterEditTextPassword" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="199dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="52dp"
+        android:text="Already Registered? "
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="21dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button"
+        app:layout_constraintVertical_bias="0.304" />
+
+    <TextView
+        android:id="@+id/singInText"
+        android:layout_width="92dp"
+        android:layout_height="39dp"
+        android:text="Sign In"
+        android:textAlignment="center"
+        android:textSize="21dp"
+        android:typeface="serif"
+        android:textStyle="bold"
+        android:textColor="#FF0000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.045"
+        app:layout_constraintStart_toEndOf="@+id/textView4"
+        app:layout_constraintTop_toBottomOf="@+id/button"
+        app:layout_constraintVertical_bias="0.302" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

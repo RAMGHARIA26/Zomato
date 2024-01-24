@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/welcomefood"
+    tools:context=".LoginActivity">
+    <TextView
+        android:id="@+id/loginZomatoText"
+        android:layout_width="282dp"
+        android:layout_height="66dp"
+        android:layout_marginTop="116dp"
+        android:contentDescription="TODO"
+        android:text="Zomato"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="50dp"
+        android:textStyle="italic"
+        android:typeface="serif"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/signTextOnly"
+        android:layout_width="143dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="24dp"
+        android:text="Sign In"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="25dp"
+        android:typeface="serif"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/loginZomatoText" />
+
+    <EditText
+        android:id="@+id/nameLoginEditText"
+        android:layout_width="361dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="80dp"
+        android:drawableLeft="@drawable/user_icon"
+        android:drawablePadding="10dp"
+        android:hint="NAME"
+        android:inputType="text"
+        android:padding="10dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/signTextOnly"/>
+
+    <EditText
+        android:id="@+id/passwordLoginEditPassWord"
+        android:layout_width="361dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:hint="PASSWORD"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        android:drawableLeft="@drawable/password_icon"
+        android:drawablePadding="10dp"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nameLoginEditText" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/loginButton"
+        android:layout_width="214dp"
+        android:onClick="signInOnClick"
+        android:layout_height="59dp"
+        android:background="@drawable/welcome_register_button"
+        android:clickable="true"
+        android:contentDescription="Register button"
+        android:text="Sign IN "
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:typeface="serif"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/passwordLoginEditPassWord"
+        app:layout_constraintStart_toStartOf="@+id/passwordLoginEditPassWord"
+        app:layout_constraintTop_toBottomOf="@+id/passwordLoginEditPassWord"
+        app:layout_constraintVertical_bias="0.358" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
